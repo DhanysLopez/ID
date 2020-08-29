@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+    <link id="css" rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="box-container">
+                <h1> My ID </h1>
+            </div>
+        </header>
+        <main>
+            <div class="box-container">
+
+                <section class="newSection" name="resultName">
+                    <div class="title">
+                        <p>NOMBRE</p>
+                    </div>
+                    <div class="item">
+                        <p id="userName"></p>
+                    </div>
+                    <div class="item">
+                        <p id="userSurname"></p>
+                    </div>
+                </section>
+                <hr />
+                <section class="newSection">
+                    <div class="title">
+                        <p>DIRECCION</p>
+                    </div>
+                    <div class="item">
+                        <p id="userAddress"></p>
+                    </div>
+                    <div class="item">
+                        <p id="userCity"></p>
+                    </div>
+                </section>
+                <hr />
+                <section class="newSection">
+                    <div class="title">
+                        <p>CURP</p>
+                    </div>
+                    <div class="item">
+                        <p id="userCurp"></p>
+                    </div>
+                </section>
+                <hr />
+                <section class="newSection">
+                    <button class="btn" id="btn-open">Actualizar</button>
+                </section>
+                
+                <div class="upload" id="form">
+                    <div class="box-form">
+                        <div class="btn-close">
+                            <img id="btn-close" src="./assets/img/close.png" alt="">
+                        </div>
+                        <form action="" id="getForm">
+                            <input id="getName" name="getName" type="text" placeholder="Nombre">
+                            <input id="getSurname" name="getSurname" type="text" placeholder="Apellido">
+                            <hr />
+                            <input id="getAddress" name="getAddress" type="text" placeholder="Direccion">
+                            <input id="getCity" name="getCity" type="text" placeholder="Esatado">
+                            <hr />
+                            <input id="getCurp" name="getCurp" type="text" placeholder="CURP">
+                        </form>
+                        <hr />
+                        <div class="dark">
+                            <p>Tema - Oscuro</p>
+                            <div class="check">
+                                <input type="checkbox" name="dark-mode" id="dark">
+                                <label for="dark"></label>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="save">
+                            <button class="btn" onclick="getData()">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
